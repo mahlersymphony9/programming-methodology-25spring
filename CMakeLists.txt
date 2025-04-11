@@ -23,3 +23,11 @@ target_link_libraries(test_calculator gtest_main)
 
 include(GoogleTest)
 gtest_discover_tests(test_calculator)
+
+add_executable(test_todo
+    todo.cpp
+    test_todo.cpp
+)
+
+target_link_libraries(test_todo gtest_main)
+gtest_discover_tests(test_todo)
